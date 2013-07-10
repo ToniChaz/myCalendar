@@ -1,0 +1,77 @@
+<div id="createEvent" data-id="createEvent">
+    <div id="myModalError" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="alert alert-error"><strong>Error!</strong></h3>
+        </div>
+        <div class="modal-body">
+            <p class="alert alert-error">An error has occurred, try again later!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button>           
+        </div>
+    </div>
+    <div id="myModalErrorInvDate" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="alert alert-error"><strong>Error!</strong></h3>
+        </div>
+        <div class="modal-body">
+            <p class="alert alert-error">The date must have this format: <b>YYYY-MM-DD</b></p>
+            <p>For example: <b>2013-08-15</b></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button>           
+        </div>
+    </div>
+    <div id="myModalSuccess" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel"  class="alert alert-success"><strong>Well done!</strong></h3>
+        </div>
+        <div class="modal-body">
+            <p class="alert alert-success">Your event has been successfully created!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button>
+            <a id="linkToEvent" class="btn btn-success" href="" target="_blank">Link to event</a>
+        </div>
+    </div>
+    <form class="form-horizontal" id="formCreateEvent">
+        <fieldset>
+            <legend>Create a new event</legend>
+            <div class="control-group">
+                <label class="control-label">Title:</label>
+                <div class="controls">
+                    <input type="text" data-id="title" placeholder="Write your title" required>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Description:</label>
+                <div class="controls">
+                    <input type="text" data-id="description" placeholder="Write your description" required>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Start Date:</label>
+                <div class="controls">
+                    <input type="text" data-id="startDate" placeholder="yyyy-mm-dd" required>
+                    <span class="help-block">Example date format: <b>2013-10-01</b></span>
+                </div>                
+            </div>
+            <div class="control-group">
+                <label class="control-label">End Date:</label>
+                <div class="controls">
+                    <input type="text" data-id="endDate" placeholder="yyyy-mm-dd" required>
+                    <span class="help-block">Example date format: <b>2013-10-01</b></span>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">                    
+                    <button type="button" data-id="btnCreate" class="btn btn-success">Create</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

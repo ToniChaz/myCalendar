@@ -1,0 +1,53 @@
+<div>
+    <div id="myModalAuth" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="alert"><strong>Warning!</strong></h3>
+        </div>
+        <div class="modal-body">
+            <p class="alert">You must login or register first and authorize this application!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button>
+            <button type="submit" id="authorize-button" style="visibility: hidden" class="btn btn-danger">Authorizer</button>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#/home">My Calendar</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="#/home">Home</a></li>                    
+                        <li><a href="#/plus">Plus</a></li>                    
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendar <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#/viewEvent">View Events</a></li>
+                                <li><a href="#/createEvent">Create Event</a></li>
+                                <li><a href="#/example">Example</a></li>                             
+                            </ul>
+                        </li>
+                    </ul>              
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </nav>
+    <header class="container">
+        <div class="hero-unit" style="margin-top: 60px">
+        <h1>My Google Calendar</h1>
+      </div>
+    </header>
+    <section class="container" data-id="screens">
+        
+    </section>    
+    <footer class="container">
+        <hr/>
+        My Calendar Google Application 2013 &copy; by Intelygenz
+    </footer>
+</div>
